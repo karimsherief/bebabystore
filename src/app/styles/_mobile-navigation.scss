@@ -1,0 +1,21 @@
+.mobile__navigation {
+    @apply fixed bottom-0 w-full bg-white px-4 py-5 md:hidden z-20;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+
+    ul {
+        @apply flex justify-evenly text-3xl
+    }
+
+    .mobile__navigation__cart {
+        @apply flex gap-3;
+
+        .mobile__navigation__cart__icon {
+            @apply text-2xl font-normal
+        }
+
+        .mobile__navigation__cart__count {
+            @apply absolute -top-2 -right-2 bg-main-200 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center text-center font-bold
+        }
+
+    }
+}

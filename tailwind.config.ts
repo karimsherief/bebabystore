@@ -6,15 +6,31 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        main: {
+          100: "#e9f5fc",
+          200: "#97D5EE",
+          300: "#5dbde3",
+          400: "#5999B2",
+        },
+        secondary: "#F6DCB8"
       },
-    },
+      backgroundColor: {
+        main: {
+          100: "#e9f5fc",
+          200: "#97D5EE",
+          300: "#5dbde3",
+          400: "#5999B2",
+        },
+        secondary: "#F6DCB8"
+      }
+    }
   },
   plugins: [],
 };
 export default config;
+
+

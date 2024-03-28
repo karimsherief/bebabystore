@@ -1,0 +1,31 @@
+footer {
+    @apply bg-white py-20 px-10;
+
+    .contact {
+        @apply border-dashed border border-gray-500 rounded-md py-12 px-12 flex items-center max-md:flex-col;
+
+        .contact__image {
+            @apply flex items-center md:border-r-2 max-md:border-b-2 max-md:pb-8 md:pr-8 max-md:flex-col max-md:text-center;
+        }
+
+        .contact__form {
+            @apply md:pl-8 max-md:mt-5;
+
+            .contact__form__input {
+                @apply bg-slate-200 p-2 rounded-sm w-full my-6 border-2 focus:bg-main-100 focus:border-main-200 focus:caret-main-200 focus:text-main-300 focus:placeholder:text-main-200;
+            }
+
+            .contact__form__submit {
+                @apply max-md:mx-auto max-md:block max-md:px-4 max-md:py-2 px-8 py-3 border-black border-2 rounded-lg hover:bg-slate-100 transition-all;
+            }
+        }
+    }
+
+    .usefull__links {
+        @apply py-20 max-md:pb-5 flex justify-between items-start max-md:flex-col gap-5 max-md:text-center max-md:justify-center max-md:items-center;
+    }
+
+    .copyright {
+        @apply border-t-2 flex justify-between py-5 max-md:flex-col max-md:gap-5 max-md:items-center max-md:text-center max-md:pb-10;
+    }
+}

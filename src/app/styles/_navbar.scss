@@ -1,0 +1,94 @@
+.navbar {
+    @apply shadow-md bg-white fixed w-full z-20 top-0 pt-8 lg:pt-5 xl:pt-3;
+
+    .navbar__search {
+        @apply relative w-[65%] mx-auto max-md:hidden;
+
+        .navbar__search__icon {
+            @apply absolute top-1/2 -translate-y-1/2 left-3
+        }
+
+        .navbar__search__input {
+            @apply p-2 pl-10 border-gray-200 border text-sm w-full
+        }
+    }
+
+    .navbar__tel {
+        @apply flex gap-3 items-center cursor-pointer;
+
+        .navbar__tel__icon {
+            @apply text-2xl font-normal;
+        }
+
+        .navbar__tel__number {
+            @apply text-sm max-md:hidden text-nowrap;
+            transition: .3s ease;
+        }
+
+        &:hover {
+            .navbar__tel__number {
+                @apply text-main-200;
+            }
+        }
+    }
+
+    .navbar__cart {
+        @apply flex gap-3;
+
+        .navbar__cart__icon {
+            @apply text-2xl font-normal
+        }
+
+        .navbar__cart__count {
+            @apply absolute -top-2 -right-2 bg-secondary rounded-full w-4 h-4 text-xs flex items-center justify-center text-center font-bold
+        }
+
+        .navbar__cart__price {
+            @apply text-sm max-md:hidden;
+            transition: .3s ease;
+        }
+
+        &:hover {
+            .navbar__cart__price {
+                @apply text-main-200;
+            }
+        }
+    }
+
+    .all-categories {
+        @apply flex gap-3 bg-main-200 py-2 pl-4 pr-5 md:py-4 md:pl-4 md:pr-10 lg:pr-24 rounded items-center;
+        transition: .3s ease;
+
+        &:hover {
+
+            @apply bg-main-200
+        }
+    }
+
+    .navbar__list {
+        @apply flex md:gap-6 text-sm;
+        // Mobile
+        @apply max-md:absolute max-md:flex-col max-md:bg-white max-md:w-full max-md:items-center max-md:left-0 max-md:p-12 max-md:text-xl max-md:gap-2;
+
+        a {
+            @apply max-md:text-slate-500 transition-all;
+            font-weight: 500;
+
+            &:hover {
+                @apply text-main-300 max-md:text-black;
+            }
+        }
+    }
+
+    .navbar__outlet {
+        @apply block border-secondary border-2 max-md:hidden rounded-md hover:border-main-200 transition-all py-4 px-8 ml-auto
+    }
+
+    .navbar__toggle__menu {
+        @apply md:hidden text-3xl;
+
+        .navbar__toggle__menu__icon {
+            @apply md:hidden
+        }
+    }
+}

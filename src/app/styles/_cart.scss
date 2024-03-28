@@ -1,0 +1,27 @@
+.cart {
+    @apply bg-white h-full w-96 fixed right-0 top-0 flex flex-col justify-between transition-all z-50 shadow-lg;
+
+    .cart__header {
+        @apply border-b p-5 border-gray-200 flex;
+
+        .close__cart {
+            @apply relative flex items-center justify-center transition-all text-2xl;
+            width: 20px;
+            height: 20px;
+
+            svg {
+                @apply absolute transition-all;
+                fill: rgba(0, 0, 0, .3);
+
+            }
+
+            &:hover {
+                transform: rotate(180deg);
+
+                svg {
+                    fill: rgba(0, 0, 0, .8);
+                }
+            }
+        }
+    }
+}
