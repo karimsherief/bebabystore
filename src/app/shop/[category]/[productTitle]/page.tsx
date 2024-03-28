@@ -17,7 +17,7 @@ export default async function Page({
   );
 }
 
-export async function getProductDetails(title: string) {
+async function getProductDetails(title: string) {
   const res = await fetch(
     `https://competition-e-commerce-backend-1.vercel.app/products/${title}`
   );

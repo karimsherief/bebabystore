@@ -64,7 +64,7 @@ export default async function CategoryProducts({
   );
 }
 
-export async function getCategoryProducts(category: string) {
+ async function getCategoryProducts(category: string) {
   const res = await fetch(
     `https://competition-e-commerce-backend-1.vercel.app/categories/${category}`
   );

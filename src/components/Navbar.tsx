@@ -12,12 +12,14 @@ export default function Navbar() {
   const [isCartShown, setIsCartShown] = useState(false);
   const [isSidebarShown, setIsSidebarShown] = useState(false);
   const [isMenuShown, setIsMenuShown] = useState(false);
-  const navbarRef = useRef();
+  const navbarRef = useRef<HTMLElement>(null);
   useEffect(() => {
     const onScroll = () => {
-      navbarRef.current.style.top = `-${
-        window.scrollY / 13 < 13 ? window.scrollY / 13 : 13
-      }%`;
+      if (navbarRef.current != null) {
+        navbarRef.current.style.top = `-${
+          window.scrollY / 13 < 13 ? window.scrollY / 13 : 13
+        }%`;
+      }
     };
 
     window.removeEventListener("scroll", onScroll);

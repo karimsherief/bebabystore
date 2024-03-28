@@ -37,7 +37,7 @@ export default async function Shop() {
   );
 }
 
-export async function getCategories() {
+ async function getCategories() {
   const res = await fetch(
     "https://competition-e-commerce-backend-1.vercel.app/categories"
   );

@@ -18,7 +18,7 @@ export default function ProductDetails({ product }: { product: ProductProps }) {
     if (color) {
       setActiveColor(color);
     }
-  }, []);
+  }, [params]);
   return (
     <div className="flex justify-center gap-10 px-20">
       <Image

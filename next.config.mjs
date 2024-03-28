@@ -4,6 +4,7 @@ const nextConfig = {
         domains: ['res.cloudinary.com'],
         formats: ['image/avif', 'image/webp']
     }
+
 };
 
 export default nextConfig;
